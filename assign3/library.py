@@ -1,5 +1,5 @@
 # library.py
-from book_class import Book
+from assign.book_class import Book
 from library_system import LibrarySystem
 
 def main():

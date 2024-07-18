@@ -1,0 +1,5 @@
+The Rose Garden, ['a1', ' a2'], 234567, 2014, 200.0, 2, None
+new Book 1, ['w1'], 34567, 2013, 200.0, 2, None
+The Book, ['a2', ' q2'], 234567, 2015, 200.0, 2, None
+New Book, ['The Last Book'], 2346576, 2013, 200.0, 2, None
+{"title": "The ", "authors": ["a1", " a2"], "isbn": "3434", "year": "4", "price": 3.0, "quantity": 3, "lent_to": null}

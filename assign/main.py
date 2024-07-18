@@ -1,5 +1,6 @@
 from book_class import Book
 from library_class import LibraryManagement
+
 menu_text = """
     Library Management System
     1. Add Book
@@ -15,15 +16,18 @@ menu_text = """
 """
 
 def add_book(library):
-    title = input("Enter title: ")
-    authors = input("Enter authors (for multiple author use ',' comma): ").split(',')
-    isbn = input("Enter ISBN: ")
-    year = input("Enter publishing year: ")
-    price = float(input("Enter price: "))
-    quantity = int(input("Enter quantity: "))
+    print("Enter Information to Add A Book: ")
+    title = input("Title: ")
+    authors = input("Author(s) (for multiple author use ',' comma): ").split(',')
+    isbn = input("ISBN: ")
+    year = input("Publishing year: ")
+    price = float(input("Price: "))
+    quantity = int(input("Quantity: "))
     book = Book(title, authors, isbn, year, price, quantity)
     book.view_book()
     library.add_book(book)
+
+
 
 
 def main():
@@ -37,11 +41,11 @@ def main():
         elif choice == "2":
             library.view_all_books()
         elif choice == "3":
-            pass
+            library.search_books()
         elif choice == "4":
-            pass
+            library.search_books_by_author()
         elif choice == "5":
-            pass
+            library.remove_book()
         elif choice == "6":
             pass
         elif choice == "7":

@@ -12,7 +12,15 @@ class LibrarySystem:
         with open(self.data_file, 'r') as file:
           data = json.load(file)
           for book_data in data['books']:
-            book = Book(book_data['title'], book_data['authors'], book_data['isbn'], book_data['year'], book_data['price'], book_data['quantity'], book_data['lent_to'])
+            book = Book(
+              book_data['title'], 
+              book_data['authors'], 
+              book_data['isbn'], 
+              book_data['year'], 
+              book_data['price'], 
+              book_data['quantity'], 
+              book_data['lent_to']
+              )
             self.books.append(book)
 
       except FileNotFoundError:

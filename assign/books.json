@@ -1,0 +1,28 @@
+{
+    "books": [
+        {
+            "title": "new book",
+            "authors": [
+                "s2",
+                "s3"
+            ],
+            "isbn": "345678",
+            "year": "2018",
+            "price": 300.0,
+            "quantity": 3,
+            "lent_to": null
+        },
+        {
+            "title": "new thsa",
+            "authors": [
+                "q1",
+                "w2"
+            ],
+            "isbn": "34567",
+            "year": "345",
+            "price": 2.0,
+            "quantity": 3,
+            "lent_to": null
+        }
+    ]
+}
